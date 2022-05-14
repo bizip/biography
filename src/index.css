@@ -21,7 +21,7 @@ code {
     monospace;
 }
 nav{
-  padding: 0 15rem;
+  padding: 0 5rem;
   height: 5rem;
   background: rgba(1, 107, 180, 1);
   display: flex;
@@ -57,9 +57,10 @@ section{
 }
 .section__header{
   display: flex;
-  flex-direction:center;
-  align-items: center;
-  justify-content: center;
+  flex-direction:row;
+  align-items: flex-start;
+  padding-top: 25rem;
+  justify-content: center; 
 }
 
 .section__header h1{
@@ -67,6 +68,7 @@ section{
   writing-mode: vertical-rl;
   letter-spacing: 5px;
   position: fixed;
+  display: inline-block;
 }
 
 .summary{
@@ -76,16 +78,9 @@ section{
  font-weight: 400;
  vertical-align: baseline;
 }
-.summary article{
 
-}
 .summary h2{
   padding:2rem 0;
-}
-.profile{
-/* background-color: grey; */
-
-
 }
 .profile__pic{
   background-color: rgb(24, 158, 84);
@@ -171,7 +166,7 @@ justify-content: space-between; */
   text-decoration: none;
 }
 .footer__about{
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 .footer__about ul{
   list-style: none;
@@ -184,5 +179,20 @@ justify-content: space-between; */
   color: #fff;
   font-weight: 400;
   margin-right: 2rem;
+}
+.social{
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  height: 5rem;
+  width: 5rem;
+  margin:1.4rem 2rem;
+}
+.social img{
+  position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+fill: red;
 }
 
