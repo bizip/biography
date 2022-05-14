@@ -80,7 +80,7 @@ section{
 }
 
 .summary h2{
-  padding:2rem 0;
+  padding:5rem 0 2rem 0;
 }
 .profile__pic{
   background-color: rgb(24, 158, 84);
@@ -97,14 +97,11 @@ section{
 
 }
 .fixed{
-  /* position: fixed; */
   top: 9%;
   display: inline;
   display: flex;
   flex-direction: row;
-  /* display: grid;
- grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
-justify-content: space-between; */
+
 }
 .img{
   max-width: 5rem;
@@ -127,10 +124,7 @@ justify-content: space-between; */
  grid-template-rows: 40% auto;
 
 }
-.profile__image{
-  /* height: 100%; */
-  
-}
+
 .profile__image img{
   height: 100%;
   width: 100%;
@@ -193,6 +187,8 @@ justify-content: space-between; */
 top: 50%;
 left: 50%;
 transform: translate(-50%,-50%);
-fill: red;
+}
+.white{
+  filter: brightness(0) invert(1);
 }
 

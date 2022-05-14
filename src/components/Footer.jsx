@@ -52,8 +52,8 @@ const Footer = () => {
               <img src={facebook} alt="social" />
             </a>
           </li>
-          <li  className="social">
-            <a href="#HH" >
+          <li className="social">
+            <a href="social">
               <img src={linkedin} alt="social" />
             </a>
           </li>

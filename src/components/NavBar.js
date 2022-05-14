@@ -1,3 +1,4 @@
+import linkedin from "../img/linkedin.svg";
 const NavBar = () => {
     return (
         <nav>
@@ -10,7 +11,7 @@ const NavBar = () => {
                 <li><a href="#Paractice">Contact Us</a></li>
                 <li><a href="#Paractice">Careers</a></li>
                 <li><a href="#Paractice">Studio</a></li>
-                <li><a href="#Paractice">Location</a></li>
+                <li><a href="#Paractice"><img src={linkedin} className="white" alt="Linkedin" /></a></li>
             </ul>
         </nav>
     )
