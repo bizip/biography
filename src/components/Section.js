@@ -34,9 +34,7 @@ const Section = () => {
                 <Footer />
             </div>
             <div className="profile">
-
             </div>
-
         </section>
     )
 }

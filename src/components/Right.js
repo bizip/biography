@@ -12,7 +12,6 @@ const Right = () => {
                         <li>Bachelor of Laws, Makerere University Kampala</li>
                     </ul>
                 </div>
-
             </div>
             <div className="right__data">
                 <ul className="details">

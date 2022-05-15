@@ -1,11 +1,13 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html{
+
+html {
   font-size: 65.5%;
 }
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -20,7 +22,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-nav{
+
+nav {
   padding: 0 5rem;
   height: 5rem;
   background: rgba(1, 107, 180, 1);
@@ -31,39 +34,41 @@ nav{
   position: fixed;
   width: 100%;
 }
-nav .nav__links{
+
+nav .nav__links {
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   list-style: none;
 }
-nav .nav__links a{
+
+nav .nav__links a {
   color: #fff;
   text-decoration: none;
   font-size: 1.4rem;
   padding: 1.4rem;
 }
-section{
-  background-image: linear-gradient(
-      to right bottom,
+
+section {
+  background-image: linear-gradient(to right bottom,
       rgba(1, 107, 180, 0.6),
-      rgba(1, 107, 180, 0.6)
-    ),
+      rgba(1, 107, 180, 0.6)),
     url("../src//img/12.jpg");
   background-size: cover;
   background-position: bottom;
   display: grid;
   grid-template-columns: 1fr 8fr 8fr;
 }
-.section__header{
+
+.section__header {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   align-items: flex-start;
   padding-top: 25rem;
-  justify-content: center; 
+  justify-content: center;
 }
 
-.section__header h1{
+.section__header h1 {
   color: #fff;
   writing-mode: vertical-rl;
   letter-spacing: 5px;
@@ -71,43 +76,43 @@ section{
   display: inline-block;
 }
 
-.summary{
- font-size: 1.5rem;
- padding: 3rem 2rem;
- line-height: 2.5rem;
- font-weight: 400;
- vertical-align: baseline;
+.summary {
+  font-size: 1.5rem;
+  padding: 3rem 2rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  vertical-align: baseline;
 }
 
-.summary h2{
-  padding:5rem 0 2rem 0;
+.summary h2 {
+  padding: 5rem 0 2rem 0;
 }
-.profile__pic{
+
+.profile__pic {
   background-color: rgb(24, 158, 84);
   height: 50px;
   width: 100%;
-
- 
 }
-.profile__data{
+
+.profile__data {
   background-color: rgb(206, 73, 73);
   width: 100%;
-
-
-
 }
-.fixed{
+
+.fixed {
   top: 9%;
   display: inline;
   display: flex;
   flex-direction: row;
 
 }
-.img{
+
+.img {
   max-width: 5rem;
 
 }
-.new{
+
+.new {
   height: 100vh;
   width: 45%;
   position: fixed;
@@ -116,79 +121,136 @@ section{
   display: grid;
   grid-template-columns: 45% 50%;
 }
-.right__data{
+
+.right__data {
   background-color: #fff;
 }
-.right__pic{
- display: grid;
- grid-template-rows: 40% auto;
+
+.right__pic {
+  display: grid;
+  grid-template-rows: 40% auto;
 
 }
 
-.profile__image img{
+.profile__image img {
   height: 100%;
   width: 100%;
 }
-.profile__education{
-  background-color:#abcb4c;
+
+.profile__education {
+  background-color: #abcb4c;
   padding: 2rem 2rem;
-  
+
 }
-.field-label{
+
+.field-label {
   font-size: 2rem;
 }
-.profile__education ul{
+
+.profile__education ul {
   padding-top: 2rem;
   font-size: 1.5rem;
   padding: 2rem 2rem;
 
 }
-.profile__education ul li{
+
+.profile__education ul li {
   padding: 1.2rem 0;
 }
-.details{
+
+.details {
   padding: 2rem;
   color: #000;
   font-size: 1.5rem;
   list-style: none;
 
-  
+
 }
+
 .details li hr,
-.details li a{
-  margin:  1.5rem 0 ;
+.details li a {
+  margin: 1.5rem 0;
   text-decoration: none;
 }
-.footer__about{
+
+.footer__about {
   padding: 1rem 0;
 }
-.footer__about ul{
+
+.footer__about ul {
   list-style: none;
-  display:flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.footer__about ul li a{
+
+.footer__about ul li a {
   text-decoration: none;
   color: #fff;
   font-weight: 400;
   margin-right: 2rem;
 }
-.social{
+
+.social {
   background-color: #fff;
   border-radius: 50%;
   position: relative;
   height: 5rem;
   width: 5rem;
-  margin:1.4rem 2rem;
+  margin: 1.4rem 2rem;
 }
-.social img{
+
+.social img {
   position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.white{
+
+.white {
   filter: brightness(0) invert(1);
 }
 
+@media only screen and (max-width: 700px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile {
+    display: none;
+  }
+
+  .new {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .new{
+   position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  section{
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .section__header{
+    display: none;
+  }
+  .summary{
+    padding: 0 4rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .new{
+    display: flex;
+    flex-direction: column;
+  }
+}
