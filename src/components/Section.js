@@ -1,3 +1,4 @@
+import Blog from "./blog";
 import Footer from "./Footer";
 
 const Section = () => {
@@ -31,6 +32,7 @@ const Section = () => {
                         <li>Engaged by multinational Chemical technology company to advise on and prepare relevant legal documents for its negotiations with foreign chemical suppliers and expansion into the Asian and European chemical engineering Markets.</li>
                     </ul>
                 </article>
+                <Blog/>
                 <Footer />
             </div>
             <div className="profile">
