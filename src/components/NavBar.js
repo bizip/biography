@@ -1,10 +1,16 @@
 import linkedin from "../img/linkedin.svg";
 import menu from "../img/menu.svg";
+import { useState } from "react";
+import Popup from "./Popup";
 
 
 const NavBar = () => {
+    const [click, setclick] = useState(false)
+    const toggleChecked = () => setclick(value => !value);
+    console.log(click)
     return (
         <nav>
+            { click && <Popup />}
             <div className="nav__logo">
                 <h1>Pascal</h1>
             </div>
@@ -15,7 +21,7 @@ const NavBar = () => {
                 <li className="desktop"><a href="#Paractice">Careers</a></li>
                 <li className="desktop"><a href="#Paractice">Studio</a></li>
                 <li><a href="#Paractice"><img src={linkedin} className="white" alt="Linkedin" /></a></li>
-                <li><img src={menu} className="white" alt="menu" /></li>
+                <li><img src={menu} className="white" onClick={toggleChecked} alt="menu" /></li>
             </ul>
         </nav>
     )

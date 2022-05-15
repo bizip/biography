@@ -1,5 +1,4 @@
 import NavBar from './components/NavBar';
-import './App.css';
 import Section from './components/Section';
 import Right from './components/Right';
 
@@ -9,7 +8,7 @@ function App() {
       <NavBar />
       <Section />
       <Right />
-      
+
     </div>
   );
 }

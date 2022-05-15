@@ -6,7 +6,7 @@ const Right = () => {
                     <img src="https://www.bytelexhq.com/sites/default/files/public/styles/adaptive/public/team/bytelex-advocates-trust-kabano.JPG?itok=8J7bEQKl" alt="profile" />
                 </div>
                 <div className="profile__education">
-                    <h2 class="field-label">Education</h2>
+                    <h2 className="field-label">Education</h2>
                     <ul>
                         <li>Postgraduate Diploma in Legal Practice</li>
                         <li>Bachelor of Laws, Makerere University Kampala</li>

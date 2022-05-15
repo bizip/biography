@@ -213,15 +213,50 @@ section {
   margin-left: 2rem;
   display: none;
 }
+.popup {
+  background-color: #016bb4;
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 900;
+  padding: 5rem 6rem;
+  display: none;
+}
+
+.popup__close {
+  padding: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 3rem;
+}
+
+.popup ul {
+  list-style: none;
+}
+.popup ul li{
+  padding: 1.2rem 0;
+}
+.popup ul li a{
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight:700;
+}
 
 @media only screen and (max-width: 700px) {
   .section {
     display: flex;
     flex-direction: column;
   }
-.white{
-  display: flex;
+.popup{
+  display: block;
 }
+  .white {
+    display: flex;
+  }
+
   .profile {
     display: none;
   }
@@ -235,35 +270,46 @@ section {
     display: none;
   }
 }
+
 @media only screen and (max-width: 400px) {
-  .new{
-   position: relative;
+  .new {
+    position: relative;
     display: flex;
     flex-direction: row;
   }
-  section{
+  .popup{
+    display: block;
+  }
+  section {
     display: grid;
     grid-template-columns: auto;
   }
-  .section__header{
+
+  .section__header {
     display: none;
   }
-  .summary{
+
+  .summary {
     padding: 0 4rem;
   }
 }
 
 @media only screen and (max-width: 350px) {
-  .new{
+  .new {
     display: flex;
     flex-direction: column;
     align-content: stretch;
     width: 100%;
   }
-  .summary{
+  .popup{
+    display: block;
+  }
+  .summary {
     padding: 1.3rem 1.3rem;
   }
-  nav{
+
+  nav {
     padding: 2rem;
   }
 }
+
