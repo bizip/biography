@@ -33,6 +33,7 @@ nav {
   align-items: center;
   position: fixed;
   width: 100%;
+  z-index: 1000;
 }
 
 nav .nav__links {
@@ -252,5 +253,13 @@ section {
   .new{
     display: flex;
     flex-direction: column;
+    align-content: stretch;
+    width: 100%;
+  }
+  .summary{
+    padding: 1.3rem 1.3rem;
+  }
+  nav{
+    padding: 2rem;
   }
 }
